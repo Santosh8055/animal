@@ -1,0 +1,88 @@
+<div class="staff-management">
+	<h3>
+		Staff Management
+	</h3>
+	<table>
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="First Name">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Last Name">
+				</mat-form-field>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Designation">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<mat-select placeholder="C.Number">
+						<mat-option value="">Option</mat-option>
+						<mat-option value="cow">USS</mat-option>
+						<mat-option value="goat">ESS</mat-option>
+						<mat-option value="Sheep">FSS</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<mat-form-field>
+					<mat-select placeholder="State">
+						<mat-option value="">Option</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<mat-select placeholder="District">
+						<mat-option value="">Option</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<mat-form-field>
+					<mat-select placeholder="City/Town">
+						<mat-option value="">Option</mat-option>
+					</mat-select>
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Area">
+				</mat-form-field>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Generate Tag">
+				</mat-form-field>
+			</td>
+			<td>
+				<button mat-raised-button color="primary">Generate Tag</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="text-align:right">
+				<button mat-raised-button color="primary">Add Farmer</button>
+			</td>
+			<td>
+				<button mat-raised-button color="warn">Reset/Clear </button>
+			</td>
+		</tr>
+
+	</table>
+</div>

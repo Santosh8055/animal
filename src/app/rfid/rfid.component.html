@@ -1,0 +1,96 @@
+<div class="rfid">
+	<table>
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Farmer Name" [(ngModel)]="details.FarmerName">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Contact Number" [(ngModel)]="details.ContactNumber">
+				</mat-form-field>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Cattle Type" [(ngModel)]="details.CattleType">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="State" [(ngModel)]="details.State">
+				</mat-form-field>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="District" [(ngModel)]="details.District">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Mandal" [(ngModel)]="details.Mandal">
+				</mat-form-field>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Village" [(ngModel)]="details.Village">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Insured Amount" [(ngModel)]="details.InsuredAmount">
+				</mat-form-field>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Insured Data" [(ngModel)]="details.PendingAmount">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Govt share" [(ngModel)]="details.GovtShare">
+				</mat-form-field>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Farmer Share" [(ngModel)]="details.FarmerShare">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Pending Amount" [(ngModel)]="details.PendingAmount">
+				</mat-form-field>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Next Payment Date" [(ngModel)]="details.NextPaymentDate">
+				</mat-form-field>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:right">
+				<button mat-raised-button color="primary">Pay Now</button>
+			</td>
+			<td>
+				<button mat-raised-button color="warn">Cancel </button>
+			</td>
+		</tr>
+
+	</table>
+</div>

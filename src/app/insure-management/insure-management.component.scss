@@ -1,0 +1,16 @@
+.insure-management {
+    padding: 1%;
+    .example-container {
+        display: flex;
+        flex-direction: column;
+        &>* {
+            width: 100%;
+        }
+    }
+    .button-row {
+        text-align: center;
+        button:nth-child(1) {
+            margin-right: 10%;
+        }
+    }
+}

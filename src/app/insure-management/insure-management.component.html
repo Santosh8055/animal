@@ -1,0 +1,46 @@
+<div class="insure-management">
+	<h3>
+		Insure Management
+	</h3>
+	<div style="text-align:right">
+		<button mat-raised-button color="primary" routerLink="/viewinsurence">
+			View Insure Management
+		</button>
+
+	</div>
+
+	<div class="example-container">
+		<mat-form-field>
+			<input matInput #input placeholder="Company Name">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput #input placeholder="Company Person">
+		</mat-form-field>
+
+		<mat-form-field>
+			<mat-select placeholder="Cattle Type">
+				<mat-option value="">Option</mat-option>
+				<mat-option value="cow">Cow</mat-option>
+				<mat-option value="goat">Goat</mat-option>
+				<mat-option value="Sheep">Sheep</mat-option>
+			</mat-select>
+			<mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput #input placeholder="State">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput #input placeholder="District">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput #input placeholder="City/Town">
+		</mat-form-field>
+	</div>
+
+	<div class="button-row">
+		<button mat-raised-button color="primary">Add Company</button>
+		<button mat-raised-button color="warn">Reset </button>
+	</div>
+
+
+</div>

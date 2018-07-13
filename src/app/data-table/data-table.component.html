@@ -1,0 +1,38 @@
+<div class="mat-elevation-z8">
+	<div class="table-container">
+		<mat-table #table [dataSource]="dataSource" matSort aria-label="Elements">
+
+			<!-- Id Column -->
+			<ng-container matColumnDef="SNo">
+				<mat-header-cell *matHeaderCellDef>S.no</mat-header-cell>
+				<mat-cell *matCellDef="let row">{{row.SNo}}</mat-cell>
+			</ng-container>
+
+			<!-- Name Column -->
+			<ng-container matColumnDef="CattleId">
+				<mat-header-cell *matHeaderCellDef>CattleId</mat-header-cell>
+				<mat-cell *matCellDef="let row">{{row.CattleId}}</mat-cell>
+			</ng-container>
+
+			<!-- Id Column -->
+			<ng-container matColumnDef="CattleType">
+				<mat-header-cell *matHeaderCellDef>CattleType</mat-header-cell>
+				<mat-cell *matCellDef="let row">{{row.CattleType}}</mat-cell>
+			</ng-container>
+
+			<!-- Name Column -->
+			<ng-container matColumnDef="Action">
+				<mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+				<mat-cell *matCellDef="let row">{{row.Action}}</mat-cell>
+			</ng-container>
+
+
+			<mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+			<mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+		</mat-table>
+	</div>
+
+	<mat-paginator #paginator [length]="dataSource.data.length" [pageIndex]="0" [pageSize]="50" [pageSizeOptions]="[25, 50, 100, 250]">
+	</mat-paginator>
+</div>

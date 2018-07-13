@@ -1,0 +1,78 @@
+<div class="save-health">
+	<table>
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Farmer Name" [(ngModel)]="farmerDetails.farmerName">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Cattle Type" [(ngModel)]="farmerDetails.cattleType">
+				</mat-form-field>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Age" [(ngModel)]="farmerDetails.age">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Temparature" [(ngModel)]="farmerDetails.temparature">
+				</mat-form-field>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Weight" [(ngModel)]="farmerDetails.weight">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Disease" [(ngModel)]="farmerDetails.disease">
+				</mat-form-field>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Level" [(ngModel)]="farmerDetails.level">
+				</mat-form-field>
+			</td>
+			<td>
+				<mat-form-field>
+					<input matInput #input placeholder="Vaccine" [(ngModel)]="farmerDetails.vacine">
+				</mat-form-field>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td>
+				Previous Record
+				<button mat-raised-button color="primary">Access Reports</button>
+
+			</td>
+			<td>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td style="text-align:right">
+				<button mat-raised-button color="primary" (click)="postHealth()">Submit</button>
+			</td>
+			<td>
+				<button mat-raised-button color="warn">Reset/Clear</button>
+			</td>
+		</tr>
+
+	</table>
+</div>
